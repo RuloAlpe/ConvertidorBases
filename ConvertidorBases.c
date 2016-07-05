@@ -11,6 +11,16 @@ void base2a16();
 void base8a2();
 void base16a2();
 
+void presentacion()
+{
+    printf("\n\n\n");
+    printf("\t*****CONVERTIDOR DE BASES NUMERICAS*****\n");
+    printf("\tAutor:Raul Alanis\n");
+    printf("\tEstudiante Universidad Autonoma del Estado de Mexico\n");
+    printf("\tIngenieria en Computacion\n");
+    printf("\n------------------------------------------------------------------\n");
+}
+
 void base2a16()
 {
     char digHexa[16] = "0123456789ABCDEF";
@@ -227,12 +237,16 @@ int main(void)
     do
     {
         system("cls");
-        printf("***CONVERTIDOR DE BASES***\n\n");
-        printf("BASE EN LA QUE ESTA EL NUMERO QUE VA A INTRODUCIR\n");
+        //printf("***CONVERTIDOR DE BASES***\n\n");
+        presentacion();
+
+        printf("\n\nBASE EN LA QUE ESTA EL NUMERO QUE VA A INTRODUCIR\n");
         printf("2.-BASE 2\n8.-BASE 8\n10.-BASE 10\n16.-BASE 16\n");
+        printf("Ingrese opcion: ");
         scanf("%d",&opcion);
         printf("BASE A LA QUE SE DESEA CONVERTIR\n");
         printf("2.-BASE 2\n8.-BASE 8\n10.-BASE 10\n16.-BASE 16\n");
+        printf("Ingrese opcion: ");
         scanf("%d",&opcion2);
 
         if(opcion == 2 && opcion2 == 10)
